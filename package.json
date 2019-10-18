@@ -24,7 +24,7 @@
     "dev": "cross-env NODE_ENV=development TEST=true PORT=80 node server",
     "dev:pro": "cross-env NODE_ENV=development PORT=3000 node server",
     "build": "cross-env TEST=true next build",
-    "build:pro": "next build",
+    "build:pro": "cross-env NODE_ENV=production next build",
     "server": "cross-env NODE_ENV=production TEST=true PORT=3000 node server",
     "server:pro": "cross-env NODE_ENV=production PORT=3000 node server",
     "deploy": "pm2 deploy development update",
