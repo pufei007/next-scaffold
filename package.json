@@ -22,7 +22,9 @@
   "scripts": {
     "start": "node server.js",
     "build": "next build",
-    "prod": "cross-env NODE_ENV=production node server.js"
+    "prod": "cross-env NODE_ENV=production node server.js",
+    "deploy": "pm2 deploy development update",
+    "deploy:pro": "pm2 deploy production update"
   },
   "keywords": [
     "nextjs",
