@@ -21,8 +21,12 @@
   },
   "scripts": {
     "start": "node server.js",
-    "build": "next build",
-    "prod": "cross-env NODE_ENV=production node server.js",
+    "dev": "cross-env NODE_ENV=development TEST=true PORT=80 node server",
+    "dev:pro": "cross-env NODE_ENV=development PORT=3000 node server",
+    "build": "cross-env TEST=true next build",
+    "build:pro": "next build",
+    "server": "cross-env NODE_ENV=production TEST=true PORT=3000 node server",
+    "server:pro": "cross-env NODE_ENV=production PORT=3000 node server",
     "deploy": "pm2 deploy development update",
     "deploy:pro": "pm2 deploy production update"
   },
