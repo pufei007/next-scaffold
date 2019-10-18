@@ -46,7 +46,7 @@ module.exports = {
       path: '/var/www/node-server/next-scaffold-pro', // 目标服务器部署地址
       // "post-setup": "mkdir build",
       'post-deploy':
-        'npm install && npm run build:pro && pm2 reload ecosystem.config.js --env production',
+        'yarn install && yarn build:pro && pm2 reload ecosystem.config.js --env production',
       env: {
         NODE_ENV: 'production',
       },
@@ -58,7 +58,7 @@ module.exports = {
       repo: 'https://github.com/pufei007/next-scaffold.git',
       path: '/var/www/node-server/next-scaffold-dev',
       'post-deploy':
-        'npm install && npm run build && pm2 reload ecosystem.config.js --env development',
+        'yarn install && yarn build && pm2 reload ecosystem.config.js --env development',
       env: {
         NODE_ENV: 'development',
       },
