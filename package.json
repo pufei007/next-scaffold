@@ -47,7 +47,7 @@
     "cross-env": "^6.0.3",
     "dynamic-antd-theme": "^0.3.1",
     "es6-promise": "^4.2.5",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "global": "^4.4.0",
     "if-comp": "^0.0.8",
     "isomorphic-unfetch": "^3.0.0",
